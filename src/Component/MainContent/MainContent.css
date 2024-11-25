@@ -1,0 +1,313 @@
+/* Main Container */
+.main-content {
+  background-image: url('../../assets/bckg.jpg');
+  color: #d7a43e;
+  font-family: "Orbitron", sans-serif;
+  padding: 50px 20px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Text Section */
+.text-section {
+  flex: 1;
+  margin-right: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Text Section Heading */
+.text-section h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Sub-heading Styling */
+.moonboxes h2 {
+  position: relative;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.moonboxes h2::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 4px;
+  background-color: #f5c72b;
+  position: absolute;
+  top: 0;
+  left: 25%;
+}
+
+/* Text Section Paragraph */
+.text-section p {
+  font-size: 16px;
+  margin-bottom: 29px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Call to Action Button */
+.cta-button {
+  border-radius: 25px;
+  background-color: rgb(215, 164, 62);
+  width: 31%;
+  color: black;
+  font-weight: bold;
+  height: 34px;
+  border: none;
+}
+
+.cta-button2 {
+  border-radius: 25px;
+  color: #d7a43e;
+  width: 152px;
+  height: 35px;
+  border: 2px solid #d7a43e;
+  background-color: transparent;
+}
+
+.cta-button3 {
+  border-radius: 25px;
+  background-color: rgb(215, 164, 62);
+  width: 31%;
+  height: 34px;
+  border: none;
+}
+
+.cta-button:hover {
+  background-color: white;
+}
+
+.arrow-icon {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Arrow Animation */
+.arrow-icon svg {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.rabbit-raiders-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Slider Section */
+.slider-section {
+  margin-top: 50px;
+}
+
+.slider-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f5c72b;
+}
+
+.swiper-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slider-image {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.slider-image:hover {
+  transform: scale(1.1);
+}
+
+.animated-slide {
+  transform: scale(0.9);
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+.animated-slide.swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Mobile View (up to 767px) */
+@media (max-width: 767px) {
+
+  /* Content Wrapper */
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* Text Section */
+  .text-section {
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .text-section h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .text-section p {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 20px;
+    margin-top: 10px;
+  }
+
+  /* Arrow Icon */
+  .arrow-icon {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .arrow-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Image Section */
+  .image-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .rabbit-raiders-image {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  /* Slider */
+  .swiper-container {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .slider-image {
+    width: 100%;
+  }
+
+  /* Paragraph Section */
+  .paragraph-section {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .paragraph-section div {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Tablet View (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-section h1 {
+    font-size: 20px;
+  }
+
+  .text-section p {
+    font-size: 15px;
+  }
+
+  .cta-button {
+    font-size: 15px;
+    padding: 12px 30px;
+    margin-top: 15px;
+  }
+
+  .rabbit-raiders-image {
+    max-width: 80%;
+  }
+}
+
+/* Desktop View (1024px and above) */
+@media (min-width: 1024px) {
+  .content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text-section h1 {
+    font-size: 24px;
+  }
+
+  .text-section p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+
+  .rabbit-raiders-image {
+    max-width: 60%;
+  }
+
+  .swiper-container {
+    width: 80%;
+  }
+
+  .swiper-slide {
+    width: 30%;
+  }
+
+  .slider-image {
+    width: 100%;
+  }
+}

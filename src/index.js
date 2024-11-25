@@ -5,6 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const meta = document.createElement('meta');
+meta.name = "viewport";
+meta.content = "width=device-width, initial-scale=1.0";
+document.head.appendChild(meta);
+const link = document.createElement("link");
+link.href =
+  "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Orbitron:wght@400;500;700&display=swap";
+link.rel = "stylesheet";
+document.head.appendChild(link);
 root.render(
   <React.StrictMode>
     <App />

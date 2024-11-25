@@ -1,0 +1,101 @@
+.sidebar-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100%;
+  padding: 20px 0;
+  background-color: #d7a43e;
+  color: white;
+  box-sizing: border-box;
+  overflow-y: auto;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.menu-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+
+.menu-item {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+
+.sidebar-menu p {
+
+  writing-mode: tb-rl;
+  height: 100%;
+  padding: 20px 0;
+  background-color: #d7a43e;
+  color: white;
+  box-sizing: border-box;
+  overflow-y: auto;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Add hover effect on text */
+.sidebar-menu p:hover {
+  color: grey;
+}
+
+/* Desktop View - Default */
+@media (min-width: 768px) {
+  .sidebar-menu {
+    width: 80px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .sidebar-menu {
+    width: 70px;
+  }
+
+  .sidebar-menu p {
+    font-size: 14px;
+
+    margin-top: 5px;
+    color: white;
+
+    transform: rotate(180deg);
+
+    white-space: nowrap;
+
+  }
+}
